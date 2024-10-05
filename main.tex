@@ -144,6 +144,8 @@
 % new command for external links:
 \renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}
 
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{#2}}
+
 % Define a new counter for references
 \newcounter{refcount}
 
@@ -223,7 +225,7 @@
         \begin{onecolentry}
             \begin{highlights}
                 \item \textbf{GPA: 3.66 / 4.0 (Ranking top 5\%)}
-                \item Thesis Topic: A Comparative Study of Tree-Based and Transformer-based Models for Fake Review Detection on Yelp
+                \item Thesis Topic: Comp. Study of Tree-Based \& Transformer-based Models for Fake Rev. Detection on Yelp
                 \item Advisor: \href{https://staff.uic.edu.cn/ywang/en}{Prof. May Ying WANG (Academic)}, \href{https://sites.google.com/view/chaijunyi/home}{Prof. Don Junyi CHAI (Final Year Project, Mentor)}
                 \item Awards: First-Class Scholarship (2019-2020), Second-Class Scholarship (2020-2021, 2021-2022, 2022-2023)
             \end{highlights}
@@ -240,7 +242,7 @@
         \begin{onecolentry}
             \begin{ieeerefs}
                 \ieeeitem \textbf{Pengqi Wang}, Mingqing Xu, Li Feng and Mingming Fan*. 2025. Understanding and Facilitating Learning with AI in Multi-Source Information Environment for College Students. Submitted to \textit{ACM CHI Conf. on Human Factors in Computing Systems} (CHI '25). Under review. \href{https://ericwangpq.github.io/files/PublishedPapers/a0-CHI25_in_depth_qualitative_study_LLM_powered_Learning.pdf}{paper}
-                \ieeeitem Qianjie Wei, Jingling Zhang, \textbf{Pengqi Wang}, Xiaofu Jin and Mingming Fan*. 2024. Augmented Library: Toward Enriching Physical Library Experience Using HMD-Based Augmented Reality. In \textit{Proc. 17th Int. Symp. Visual Information Communication and Interaction (VINCI '24)}. arxiv
+                \ieeeitem Qianjie Wei, Jingling Zhang, \textbf{Pengqi Wang}, Xiaofu Jin and Mingming Fan*. 2024. Augmented Library: Toward Enriching Physical Library Experience Using HMD-Based Augmented Reality. In \textit{Proc. 17th Int. Symp. Visual Information Communication and Interaction (VINCI '24)}. \href{https://arxiv.org/abs/2408.06107}{arxiv}
                 \ieeeitem May Ying Wang, Bingjie Deng* and \textbf{Pengqi Wang}*. 2024. From Hallucination to Trust: Leveraging Chain-of-Thoughts and Empathy in LLM-Empowered Agent. In \textit{Proc. 24th Int. Conf. Electronic Business (ICEB '24)}. \href{https://ericwangpq.github.io/files/PublishedPapers/a2-FromHallucination.pdf}{paper}
                 \ieeeitem May Ying Wang, Na Jiang, \textbf{Pengqi Wang} and Bingqing Xiong. 2024. Enhancing Well-Being and Reliance on AIGC-Powered Digital Assistants. In \textit{2024 UNNC-CNAIS Paper Development Workshop}.
                 \ieeeitem May Ying Wang and \textbf{Pengqi Wang}*. 2024. Decoding Business Applications of Generative AI: A Bibliometric Analysis and Text Mining Approach. In \textit{Proc. 23rd Int. Conf. Electronic Business (ICEB '23)}. \href{https://ericwangpq.github.io/files/PublishedPapers/a5-DecodingBusinessApplications.pdf}{paper}
@@ -248,113 +250,68 @@
                 \ieeeitem \textbf{Pengqi Wang}, Mengli Yu and Yadong Liu*. 2022. Assessing the Content Topics of the Educational Videos on Tik Tok for Science Communication. In \textit{Proc. Int. Seminar on Education, Management and Social Sciences (ISEMSS '22)}. \href{https://ericwangpq.github.io/files/PublishedPapers/a8-AssessingContent.pdf}{paper}
             \end{ieeerefs}
         \end{onecolentry}
-    \section{Selected Research Projects}
+
+\newpage
+
+    \section{Selected Research Experiences}
 
         \begin{twocolentry}{
-        \textit{Jun 2024 – Sep 2024}}
-            \textbf{Understanding and Facilitating Learning with AI in Multi-Source Information Environment for College Students}
+        \textit{Sep 2023 – Present}}
+            \textbf{Research Student}
+
+            \textit{Accessible \& Pervasive User EXperience (APEX) Lab, HKUST, Supervised by Prof. Mingming FAN}
         \end{twocolentry}
 
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Supervised by Prof. Mingming FAN @ Accessible \& Pervasive User EXperience (APEX) Lab, HKUST
-                \item Led qualitative research understanding and designing AI-powered tools to support college students in multi-source information environments, revealed a framework of students' multi-source information behaviors, provided design implications for enhancing AI-assisted academic tools.
-                \item Conducted focus group study sessions and participatory design workshops, analyzed the data using inductive and deductive analysis to generate actionable insights, and authored the manuscript.
+                \item \textbf{Understanding and Facilitating Learning with AI in Multi-Source Information Environment for College Students}
+                \begin{itemize}
+                    \item Led qualitative research understanding and designing AI-powered tools to support college students in multi-source information environments, revealed a framework of students' multi-source information behaviors, provided design implications for enhancing AI-assisted academic tools.
+                    \item Conducted focus group study sessions and participatory design workshops, analyzed the data using inductive and deductive analysis to generate actionable insights, and authored the manuscript.
+                \end{itemize}
+                % \item \textbf{Augmented Library: Toward Enriching Physical Library Experience Using HMD-Based AR}
+                % \begin{itemize}
+                %     \item Designed, developed, and evaluated an HMD-based AR system, Augmented Library, to revitalize physical library experiences by integrating interactive digital features that enhance book discovery and community engagement for college students.
+                % \end{itemize}
+                \item \textbf{Exploring the Design of AI-mediated Emotion Communication for Deaf and Hard of Hearing People in Online Meetings}
+                \begin{itemize}
+                    \item Designed, developed, and implemented an AI-driven emotion support system for Deaf and Hard of Hearing (DHH) participants in online meetings via detecting, interpreting, and visualizing emotional states in real-time, addressing the unique emotional challenges faced by DHH users in virtual environments.
+                    \item Worked collaboratively with DHH community and planned user evaluations to assess its effectiveness in improving participation and reducing social isolation.
+                \end{itemize}
+                \item \textbf{Investigating the Role of AI in the Team Synchronous-Asynchronous Collaboration Loop}
+                \begin{itemize}
+                    \item Proposed and developed an AI-assisted collaborative ideation system to enhance team collaboration across synchronous and asynchronous modes, with a focus on improving idea comprehension and evolution in group ideation processes. Prepared and conducted user evaluations to assess the effectiveness of AI-assisted features in collaborative environments.
+                \end{itemize}
             \end{highlights}
         \end{onecolentry}
 
-        \vspace{0.2 cm}
-
         \begin{twocolentry}{
-        \textit{Mar 2024 – Jun 2024}}
-            \textbf{Augmented Library: Toward Enriching Physical Library Experience Using HMD-Based AR}
+            \textit{Jul 2022 – Present}}
+                \textbf{Research Assistant}
+    
+                \textit{Faculty of Business and Management, HKBU-UIC (Supervised by Prof. May Ying WANG)}
         \end{twocolentry}
 
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Supervised by Prof. Mingming FAN @ Accessible \& Pervasive User EXperience (APEX) Lab, HKUST
-                \item Designed, developed, and evaluated an HMD-based AR system, Augmented Library, to revitalize physical library experiences by integrating interactive digital features that enhance book discovery and community engagement for college students.
+                \item \textbf{From Hallucination to Trust: Leveraging CoT and Empathy in LLM-Empowered Agent}
+                \begin{itemize}
+                    \item Explored how Chain-of-Thought reasoning and empathy expressions can enhance user experience with LLMs in critical interaction scenarios, specifically hallucination and service failure, contributing to the development of trustworthy and user-centric AI systems.
+                    \item Developed an AI-powered conversational agent based on LobeHub framework for field study experiment, prepared the questionnaire, and authored the manuscript.
+                \end{itemize}
             \end{highlights}
         \end{onecolentry}
 
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-        \textit{Mar 2024 – Jun 2024}}
-            \textbf{From Hallucination to Trust: Leveraging CoT and Empathy in LLM-Empowered Agent}
-        \end{twocolentry}
-
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Supervised by Dr. May Ying WANG (HKBU-UIC) \& Dr. Amber Bingjie DENG (XJT-LiverpoolU)
-                \item Explored how Chain-of-Thought reasoning and empathy expressions can enhance user experience with LLMs in critical interaction scenarios, specifically hallucination and service failure, contributing to the development of trustworthy and user-centric AI systems.
-                \item Developed an AI-powered conversational agent based on LobeHub framework for field study experiment, prepared the questionnaire, and authored the manuscript.
-            \end{highlights}
-        \end{onecolentry}
-
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-        \textit{Mar 2024 – Present}}
-            \textbf{Investigating the Role of AI in the Team Synchronous-Asynchronous Collaboration Loop}
-        \end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Supervised by Prof. Mingming FAN @ Accessible \& Pervasive User EXperience (APEX) Lab, HKUST. (Work in Progress)
-                \item Proposed and developed an AI-assisted collaborative ideation system to enhance team collaboration across synchronous and asynchronous modes, with a focus on improving idea comprehension and evolution in group ideation processes. Prepared and conducted user evaluations to assess the effectiveness of AI-assisted features in collaborative environments.
-            \end{highlights}
-        \end{onecolentry}
-
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-        \textit{Feb 2024 – Present}}
-            \textbf{Exploring the Design of AI-mediated Emotion Communication for Deaf and Hard of Hearing People in Online Meetings}
-        \end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Supervised by Prof. Mingming FAN @ Accessible \& Pervasive User EXperience (APEX) Lab, HKUST. (Work in Progress)
-                \item Designed, developed, and implemented an AI-driven emotion support system for Deaf and Hard of Hearing (DHH) participants in online meetings via detecting, interpreting, and visualizing emotional states in real-time, addressing the unique emotional challenges faced by DHH users in virtual environments.
-                \item Worked collaboratively with DHH community and planned user evaluations to assess its effectiveness in improving participation and reducing social isolation.
-            \end{highlights}
-        \end{onecolentry}
-
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-        \textit{Feb 2024 – Jun 2024}}
-            \textbf{Enhancing Well-Being and Reliance on AIGC-Powered Digital Assistants}
-        \end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Supervised by Dr. May Ying WANG \& Dr. Na JIANG (HKBU-UIC)
-                \item Investigated the impact of explainability signals and dialogue strategies on user well-being and reliance on AIGC-powered digital assistants, aiming to refine their design and enhance user satisfaction.
-                \item Designed experiments, developed systems, and presented the working paper at the 2024 UNNC-CNAIS Paper Development Workshop, gathering valuable insights from conference mentor Atreyi Kankanhalli for future research directions.
-            \end{highlights}
-        \end{onecolentry}
-
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-        \textit{Jan 2023 – Jun 2023}}
-            \textbf{A Comparative Study of Tree-Based and Transformer-based Models for Fake Review Detection}
-        \end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Supervised by Dr. Don Junyi CHAI (IEEE Member, HKBU-UIC)
-                \item Spearheaded an investigation comparing traditional tree-based models (Random Forest, XGBoost) with state-of-the-art transformer-based models (BERT, GPT-3) for fake online review detection in e-commerce context. Analyzed the effectiveness of textual features, sampling methods, and overall detection performance using a large-scale dataset.
-                \item Implemented and evaluated multiple ML approaches, including feature engineering, balanced sampling techniques, and model training.
+                \item \textbf{Enhancing Well-Being and Reliance on AIGC-Powered Digital Assistants}
+                \begin{itemize}
+                    \item Investigated the impact of explainability signals and dialogue strategies on user well-being and reliance on AIGC-powered digital assistants, aiming to refine their design and enhance user satisfaction.
+                    \item Designed experiments, developed systems, and presented the working paper at the 2024 UNNC-CNAIS Paper Development Workshop, gathering valuable insights from conference mentor Atreyi Kankanhalli for future research directions.
+                \end{itemize}
             \end{highlights}
         \end{onecolentry}
 
