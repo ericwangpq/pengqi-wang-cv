@@ -56,7 +56,7 @@
 \makeatletter
 \let\ps@customFooterStyle\ps@plain % Copy the plain style to customFooterStyle
 \patchcmd{\ps@customFooterStyle}{\thepage}{
-    \color{gray}\textit{\small John Doe - Page \thepage{} of \pageref*{LastPage}}
+    \color{gray}\textit{\small Pengqi WANG - Page \thepage{} of \pageref*{LastPage}}
 }{}{} % replace number by desired string
 \makeatother
 \pagestyle{customFooterStyle}
@@ -127,16 +127,16 @@
     \par\kern\topsep
 } % new environment for the header
 
-\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
-  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
-    \put(
-        \LenToUnit{\paperwidth-2 cm-0.2 cm+0.05cm},
-        \LenToUnit{\paperheight-1.0 cm}
-    ){\vtop{{\null}\makebox[0pt][c]{
-        \small\color{gray}\textit{Last updated in September 2024}\hspace{\widthof{Last updated in September 2024}}
-    }}}%
-  }%
-}%
+% \newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+%   \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+%     \put(
+%         \LenToUnit{\paperwidth-2 cm-0.2 cm+0.05cm},
+%         \LenToUnit{\paperheight-1.0 cm}
+%     ){\vtop{{\null}\makebox[0pt][c]{
+%         \small\color{gray}\textit{Last updated in September 2024}\hspace{\widthof{Last updated in September 2024}}
+%     }}}%
+%   }%
+% }%
 
 % save the original href command in a new command:
 \let\hrefWithoutArrow\href
@@ -153,7 +153,7 @@
     \newsavebox\ANDbox
     \sbox\ANDbox{}
 
-    \placelastupdatedtext
+    % \placelastupdatedtext
     \begin{header}
         \textbf{\fontsize{24 pt}{24 pt}\selectfont Pengqi "Eric" WANG}
 
@@ -181,10 +181,10 @@
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item GPA: 4.06 / 4.3
-                \item Cognate: Human Computer Interaction
+                \item \textbf{GPA: 4.06 / 4.3}
+                \item \textbf{Cognate: Human Computer Interaction}
                 \item Thesis Topic: Enhancing Children's Reading Engagement through Multi-Modal Interactive AI Agent
-                \item Advisor: Prof. Mingming FAN (Primary), Prof. Muzhi ZHOU (Co)
+                \item Advisor: \href{https://www.mingmingfan.com/}{Prof. Mingming FAN (Primary)}, \href{https://sosc.hkust.edu.hk/people/muzhi-zhou/}{Prof. Muzhi ZHOU (Co)} 
                 \item Awards: Postgraduate Studentship (~1,426 USD per month); Postgraduate Research Funding \& Travel Grant
             \end{highlights}
         \end{onecolentry}
@@ -201,9 +201,9 @@
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item GPA: 3.66 / 4.0 (Ranking top 5\%)
+                \item \textbf{GPA: 3.66 / 4.0 (Ranking top 5\%)}
                 \item Thesis Topic: A Comparative Study of Tree-Based and Transformer-based Models for Fake Review Detection on Yelp
-                \item Advisor: Prof. May Ying WANG (Academic), Prof. Don Junyi CHAI (Final Year Project, Mentor)
+                \item Advisor: \href{https://staff.uic.edu.cn/ywang/en}{Prof. May Ying WANG (Academic)}, \href{https://sites.google.com/view/chaijunyi/home}{Prof. Don Junyi CHAI (Final Year Project, Mentor)}
                 \item Awards: First-Class Scholarship (2019-2020), Second-Class Scholarship (2020-2021, 2021-2022, 2022-2023)
             \end{highlights}
         \end{onecolentry}
@@ -211,14 +211,13 @@
     \section{Research Interest}
 
         \begin{onecolentry}
-            Human-AI Collaboration, Educational Technology, Technology for Social Good, Computer-Supported Cooperative Work, Assistive Technology, Healthcare, etc.
+            Human-AI Collaboration, Educational Technology, Technology for Social Good, Computer-Supported Cooperative Work (CSCW), Assistive Technology, Healthcare, etc.
         \end{onecolentry}
 
     \section{Publications}
 
         \begin{onecolentry}
             \begin{enumerate}
-                \item 
                 \item Q. Wei, J. Zhang, P. Wang, X. Jin, and M. Fan, "Augmented Library: Toward Enriching Physical Library Experience Using HMD-Based Augmented Reality," in \textit{Proc. 17th Int. Symp. Visual Information Communication and Interaction (VINCI)}, 2024.
                 \item M. Wang, B. Deng, and P. Wang, "From Hallucination to Trust: Leveraging Chain-of-Thoughts and Empathy in LLM-Empowered Agent," in \textit{Proc. 24th Int. Conf. Electronic Business (ICEB)}, 2024.
                 \item M. Wang, N. Jiang, P. Wang, and B. Xiong, "Enhancing Well-Being and Reliance on AIGC-Powered Digital Assistants," in \textit{Proc. 2024 UNNC-CNAIS Paper Development Workshop}, 2024.
