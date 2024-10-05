@@ -144,6 +144,27 @@
 % new command for external links:
 \renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}
 
+% Define a new counter for references
+\newcounter{refcount}
+
+% Define a new environment for IEEE-style references
+\newenvironment{ieeerefs}{
+    \begin{list}{}{ % Start a list environment
+        \setlength{\leftmargin}{10pt} % Adjust left margin as needed
+        \setlength{\itemindent}{-4pt} % Negative indentation for hanging format
+        \setlength{\labelwidth}{5pt} % Width of the label
+        \setlength{\labelsep}{5pt} % No separation between label and item
+        \renewcommand{\makelabel}[1]{\hss[##1]\hfil} % Format the label as [n] and align right
+    }
+}{
+    \end{list}
+}
+
+% Define a command for each reference item
+\newcommand{\ieeeitem}{
+    \refstepcounter{refcount} % Increment the reference counter
+    \item[\therefcount] % Use the current counter value as the label
+}
 
 \begin{document}
     \newcommand{\AND}{\unskip
@@ -217,18 +238,18 @@
     \section{Publications}
 
         \begin{onecolentry}
-            \begin{enumerate}
-                \item Q. Wei, J. Zhang, P. Wang, X. Jin, and M. Fan, "Augmented Library: Toward Enriching Physical Library Experience Using HMD-Based Augmented Reality," in \textit{Proc. 17th Int. Symp. Visual Information Communication and Interaction (VINCI)}, 2024.
-                \item M. Wang, B. Deng, and P. Wang, "From Hallucination to Trust: Leveraging Chain-of-Thoughts and Empathy in LLM-Empowered Agent," in \textit{Proc. 24th Int. Conf. Electronic Business (ICEB)}, 2024.
-                \item M. Wang, N. Jiang, P. Wang, and B. Xiong, "Enhancing Well-Being and Reliance on AIGC-Powered Digital Assistants," in \textit{Proc. 2024 UNNC-CNAIS Paper Development Workshop}, 2024.
-                \item M. Wang, P. Wang, and X. Chen, "Customer Perceptions and Experiences Regarding Information Retrieval Using Generative AI and Search Engines: A Comparative Analysis," in \textit{Proc. Asia Pacific Marketing Academy Annual (APMA)}, 2024.
-                \item M. Wang and P. Wang, "Decoding Business Applications of Generative AI: A Bibliometric Analysis and Text Mining Approach," in \textit{Proc. 23rd Int. Conf. Electronic Business (ICEB)}, 2023.
-                \item P. Wang, Y. Lin, and J. Chai, "Unmasking Deception: A Comparative Study of Tree-Based and Transformer-based Models for Fake Review Detection on Yelp," in \textit{Proc. IEEE Int. Conf. Systems, Man, and Cybernetics (SMC)}, 2023.
-                \item M. Wang and P. Wang, "Generative AI in Marketing: A New Era of Innovation and Opportunity," in \textit{Proc. Asia Pacific Marketing Academy Annual (APMA)}, 2023.
-                \item P. Wang, M. Yu, and Y. Liu, "Assessing the Content Topics of the Educational Videos on Tik Tok for Science Communication," in \textit{Proc. Int. Seminar on Education, Management and Social Sciences (ISEMSS)}, 2022.
-            \end{enumerate}
+            \begin{ieeerefs}
+                \ieeeitem Pengqi Wang, Mingqing Xu, Li Feng, Mingming Fan. Understanding and Facilitating Learning with AI in Multi-Source Information Environment for College Students”, Submitted to ACM CHI Conference on Human Factors in Computing Systems (CHI '25).
+                \ieeeitem Q. Wei, J. Zhang, P. Wang, X. Jin, and M. Fan, "Augmented Library: Toward Enriching Physical Library Experience Using HMD-Based Augmented Reality," in \textit{Proc. 17th Int. Symp. Visual Information Communication and Interaction (VINCI)}, 2024.
+                \ieeeitem M. Wang, B. Deng, and P. Wang, "From Hallucination to Trust: Leveraging Chain-of-Thoughts and Empathy in LLM-Empowered Agent," in \textit{Proc. 24th Int. Conf. Electronic Business (ICEB)}, 2024.
+                \ieeeitem M. Wang, N. Jiang, P. Wang, and B. Xiong, "Enhancing Well-Being and Reliance on AIGC-Powered Digital Assistants," in \textit{Proc. 2024 UNNC-CNAIS Paper Development Workshop}, 2024.
+                \ieeeitem M. Wang, P. Wang, and X. Chen, "Customer Perceptions and Experiences Regarding Information Retrieval Using Generative AI and Search Engines: A Comparative Analysis," in \textit{Proc. Asia Pacific Marketing Academy Annual (APMA)}, 2024.
+                \ieeeitem M. Wang and P. Wang, "Decoding Business Applications of Generative AI: A Bibliometric Analysis and Text Mining Approach," in \textit{Proc. 23rd Int. Conf. Electronic Business (ICEB)}, 2023.
+                \ieeeitem P. Wang, Y. Lin, and J. Chai, "Unmasking Deception: A Comparative Study of Tree-Based and Transformer-based Models for Fake Review Detection on Yelp," in \textit{Proc. IEEE Int. Conf. Systems, Man, and Cybernetics (SMC)}, 2023.
+                \ieeeitem M. Wang and P. Wang, "Generative AI in Marketing: A New Era of Innovation and Opportunity," in \textit{Proc. Asia Pacific Marketing Academy Annual (APMA)}, 2023.
+                \ieeeitem P. Wang, M. Yu, and Y. Liu, "Assessing the Content Topics of the Educational Videos on Tik Tok for Science Communication," in \textit{Proc. Int. Seminar on Education, Management and Social Sciences (ISEMSS)}, 2022.
+            \end{ieeerefs}
         \end{onecolentry}
-
     \section{Selected Research Projects}
 
         \begin{twocolentry}{
