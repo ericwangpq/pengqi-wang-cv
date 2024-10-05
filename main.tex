@@ -3,11 +3,11 @@
 % Packages:
 \usepackage[
     ignoreheadfoot, % set margins without considering header and footer
-    top=2 cm, % seperation between body and page edge from the top
-    bottom=2 cm, % seperation between body and page edge from the bottom
-    left=2 cm, % seperation between body and page edge from the left
-    right=2 cm, % seperation between body and page edge from the right
-    footskip=1.0 cm, % seperation between body and footer
+    top=1 cm, % separation between body and page edge from the top
+    bottom=1 cm, % separation between body and page edge from the bottom
+    left=2 cm, % separation between body and page edge from the left
+    right=2 cm, % separation between body and page edge from the right
+    footskip=0.8 cm, % separation between body and footer
     % showframe % for debugging 
 ]{geometry} % for adjusting page geometry
 \usepackage{titlesec} % for customizing section titles
@@ -56,7 +56,7 @@
 \makeatletter
 \let\ps@customFooterStyle\ps@plain % Copy the plain style to customFooterStyle
 \patchcmd{\ps@customFooterStyle}{\thepage}{
-    \color{gray}\textit{\small Pengqi WANG - Page \thepage{} of \pageref*{LastPage}}
+    \color{gray}\textit{\small Pg. \thepage{} of \pageref*{LastPage}}
 }{}{} % replace number by desired string
 \makeatother
 \pagestyle{customFooterStyle}
@@ -206,9 +206,9 @@
             \begin{highlights}
                 \item \textbf{GPA: 4.06 / 4.3}
                 \item \textbf{Cognate: Human Computer Interaction}
-                \item Thesis Topic: Enhancing Children's Reading Engagement through Multi-Modal Interactive AI Agent
-                \item Advisor: \href{https://www.mingmingfan.com/}{Prof. Mingming FAN (Primary)}, \href{https://sosc.hkust.edu.hk/people/muzhi-zhou/}{Prof. Muzhi ZHOU (Co)} 
-                \item Awards: Postgraduate Studentship (~1,426 USD per month); Postgraduate Research Funding \& Travel Grant
+                \item \textbf{Thesis Topic:} Enhancing Children's Reading Engagement through Multi-Modal Interactive AI Agent
+                \item \textbf{Advisor:} \href{https://www.mingmingfan.com/}{Prof. Mingming FAN (Primary)}, \href{https://sosc.hkust.edu.hk/people/muzhi-zhou/}{Prof. Muzhi ZHOU (Co)} 
+                \item \textbf{Awards:} Postgraduate Studentship (~1,426 USD per month); Postgraduate Research Funding \& Travel Grant
             \end{highlights}
         \end{onecolentry}
 
@@ -225,9 +225,9 @@
         \begin{onecolentry}
             \begin{highlights}
                 \item \textbf{GPA: 3.66 / 4.0 (Ranking top 5\%)}
-                \item Thesis Topic: Comp. Study of Tree-Based \& Transformer-based Models for Fake Rev. Detection on Yelp
-                \item Advisor: \href{https://staff.uic.edu.cn/ywang/en}{Prof. May Ying WANG (Academic)}, \href{https://sites.google.com/view/chaijunyi/home}{Prof. Don Junyi CHAI (Final Year Project, Mentor)}
-                \item Awards: First-Class Scholarship (2019-2020), Second-Class Scholarship (2020-2021, 2021-2022, 2022-2023)
+                \item \textbf{Thesis Topic:} Comp. Study of Tree-Based \& Transformer-based Models for Fake Rev. Detection on Yelp
+                \item \textbf{Advisor:} \href{https://staff.uic.edu.cn/ywang/en}{Prof. May Ying WANG (Academic)}, \href{https://sites.google.com/view/chaijunyi/home}{Prof. Don Junyi CHAI (Final Year Project, Mentor)}
+                \item \textbf{Awards:} First-Class Scholarship (2019-2020), Second-Class Scholarship (2020-2021, 2021-2022, 2022-2023)
             \end{highlights}
         \end{onecolentry}
 
@@ -251,16 +251,23 @@
             \end{ieeerefs}
         \end{onecolentry}
 
-\newpage
+% \newpage
+% ===============================
+% Selected Research Experiences
+% ===============================
 
     \section{Selected Research Experiences}
+
+% ===============================
+% Research Student @ HKUST
+% ===============================
 
         \begin{twocolentry}{
         \textit{Sep 2023 – Present}}
             \textbf{Research Student}
-
-            \textit{Accessible \& Pervasive User EXperience (APEX) Lab, HKUST, Supervised by Prof. Mingming FAN}
         \end{twocolentry}
+        \hspace{0.2cm}\textit{\textbf{A}ccessible \& \textbf{P}ervasive User \textbf{EX}perience (\href{https://www.mingmingfan.com/lab/}{APEX}) Lab}, HKUST (Supervised by Prof. Mingming FAN)
+
 
         \vspace{0.10 cm}
         \begin{onecolentry}
@@ -270,10 +277,10 @@
                     \item Led qualitative research understanding and designing AI-powered tools to support college students in multi-source information environments, revealed a framework of students' multi-source information behaviors, provided design implications for enhancing AI-assisted academic tools.
                     \item Conducted focus group study sessions and participatory design workshops, analyzed the data using inductive and deductive analysis to generate actionable insights, and authored the manuscript.
                 \end{itemize}
-                % \item \textbf{Augmented Library: Toward Enriching Physical Library Experience Using HMD-Based AR}
-                % \begin{itemize}
-                %     \item Designed, developed, and evaluated an HMD-based AR system, Augmented Library, to revitalize physical library experiences by integrating interactive digital features that enhance book discovery and community engagement for college students.
-                % \end{itemize}
+                \item \textbf{Augmented Library: Toward Enriching Physical Library Experience Using HMD-Based AR}
+                \begin{itemize}
+                    \item Designed, developed, and evaluated an HMD-based AR system, Augmented Library, to revitalize physical library experiences by integrating interactive digital features that enhance book discovery and community engagement for college students.
+                \end{itemize}
                 \item \textbf{Exploring the Design of AI-mediated Emotion Communication for Deaf and Hard of Hearing People in Online Meetings}
                 \begin{itemize}
                     \item Designed, developed, and implemented an AI-driven emotion support system for Deaf and Hard of Hearing (DHH) participants in online meetings via detecting, interpreting, and visualizing emotional states in real-time, addressing the unique emotional challenges faced by DHH users in virtual environments.
@@ -286,12 +293,36 @@
             \end{highlights}
         \end{onecolentry}
 
+% ===============================
+% Research Student @ NKU - uncomment this only for health care related research
+% ===============================
+
+% \begin{twocolentry}{
+%     \textit{Jun 2024 – Sep 2024}}
+%         \textbf{Summer Research Assistant}   
+% \end{twocolentry}
+% \hspace{0.2cm} Nankai University (Supervised by Prof. Mengli YU)
+% \begin{onecolentry}
+%     \begin{highlights}
+%         \item \textbf{Advancing Trustworthiness of AI-Powered Chatbot Applied in
+%         Virtual Triage}
+%         \begin{itemize}
+%             \item Proposed and developed an AI-assisted chatbot to support the triage process in hospitals by providing multi-run guided dialogues, references to reliable and verifiable information, and empathetic responses to enhance user trust.
+%         \end{itemize}
+%     \end{highlights}
+% \end{onecolentry}
+
+% ===============================
+% Research Assistant @ HKBU-UIC
+% ===============================
+
+
         \begin{twocolentry}{
-            \textit{Jul 2022 – Present}}
-                \textbf{Research Assistant}
-    
-                \textit{Faculty of Business and Management, HKBU-UIC (Supervised by Prof. May Ying WANG)}
+            \textit{May 2023 – Sep 2023}}
+                \textbf{Research Assistant}   
         \end{twocolentry}
+        \hspace{0.2cm}\textit{Faculty of Business and Management}, HKBU-UIC (Supervised by Prof. May Ying WANG)
+
 
         \vspace{0.10 cm}
         \begin{onecolentry}
@@ -321,8 +352,13 @@
         \textit{Jul 2022 – Nov 2022}}
             \textbf{Data Analyst Intern}
 
-            \textit{eBay Inc. @ Top Seller Account Management Team, SZ Branch}
+            \textit{eBay Inc. @ Top Seller Account Management Team}
         \end{twocolentry}
+        \begin{onecolentry}
+            \begin{highlights}
+                Analyzed and visualized data using \textbf{SQL}, \textbf{Python}, \textbf{R}, \textbf{Excel VBA}, and \textbf{Tableau} to create interactive dashboards that trended key business indicators, supported data analysis for marketing growth by 40\%, and enhanced decision-making for 1k+ top sellers.
+            \end{highlights}
+        \end{onecolentry}
 
         \vspace{0.2 cm}
 
@@ -332,6 +368,11 @@
 
             \textit{Kingdee International Software Group @ Kingdee China Shared Service Center}
         \end{twocolentry}
+        \begin{onecolentry}
+            \begin{highlights}
+                Maintained and optimized major info. sys. (ERP, CRM, KBC), processed over 100 issues by providing remote \textbf{SQL} and \textbf{Python} support, and enhanced the efficiency of Intelligent Approval System by 20\%.
+            \end{highlights}
+        \end{onecolentry}
 
     \section{References}
 
